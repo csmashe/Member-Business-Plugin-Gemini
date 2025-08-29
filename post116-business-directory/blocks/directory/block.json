@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "p116/directory",
+    "version": "0.1.0",
+    "title": "Business Directory",
+    "category": "widgets",
+    "icon": "business",
+    "description": "Displays the business directory.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "showFlags": {
+            "type": "boolean",
+            "default": true
+        },
+        "perPage": {
+            "type": "number",
+            "default": 10
+        },
+        "placeholderText": {
+            "type": "string",
+            "default": "Search Businesses..."
+        }
+    },
+    "editorScript": "file:./index.js",
+    "render": "file:./render.php"
+}
